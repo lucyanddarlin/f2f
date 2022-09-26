@@ -15,6 +15,7 @@
   "devDependencies": {
     "@sxzz/eslint-config": "^2.4.4",
     "@types/node": "^18.7.21",
+    "@unocss/reset": "^0.45.23",
     "@unocss/transformer-directives": "^0.45.22",
     "@vitejs/plugin-vue": "^3.1.0",
     "@vue/runtime-core": "^3.2.39",
