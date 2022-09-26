@@ -1,0 +1,35 @@
+{
+  "name": "f2f-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite-ssg build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.ts,.vue ."
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@sxzz/eslint-config": "^2.4.4",
+    "@types/node": "^18.7.21",
+    "@unocss/transformer-directives": "^0.45.22",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/runtime-core": "^3.2.39",
+    "@vueuse/core": "^9.3.0",
+    "@vueuse/head": "^0.7.12",
+    "eslint": "8.22.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.6.4",
+    "unocss": "^0.45.22",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-vue-components": "^0.22.7",
+    "vite": "^3.1.0",
+    "vite-plugin-pages": "^0.26.0",
+    "vite-ssg": "^0.20.2",
+    "vue-router": "^4.1.5",
+    "vue-tsc": "^0.40.4"
+  }
+}
