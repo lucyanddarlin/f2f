@@ -11,4 +11,7 @@
 .header {
   background: var(--header-bg);
 }
+.dark-header {
+  background: #000;
+}
 </style>

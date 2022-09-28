@@ -2,6 +2,7 @@ import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
   attributify: true,
+  darkMode: 'class',
   shortcuts: {
     'flex-center': 'justify-center items-center',
     'text-md': 'text-1rem leading-1.5rem',
