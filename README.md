@@ -2,9 +2,11 @@
 - ```shell
   pnmp i
   ```
+  
 - ```shell
   pnmp run dev
   ```
-  - ```shell
+
+- ```shell
   pnmp run build
   ```
