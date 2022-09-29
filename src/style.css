@@ -1,11 +1,45 @@
 :root {
   --header-bg: linear-gradient(180deg, #b7dca7 0%, rgba(183, 220, 167, 0) 100%);
+  --border-color: #e4e7ed;
+  --text-color: #333;
+  --brand-color: #c3e1b5;
+  --bg: #ffffff;
+  --link-color: #0969da;
+}
+
+.dark {
+  --border-color: #414243;
+  --text-color: #fff;
+  --bg: #141414;
+
+  color-scheme: dark;
+  --link-color: #95d3f5;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg);
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
 }
 
 .border-box{ 
   border: 1px solid transparent;
   background: linear-gradient(white, white) padding-box,
     repeating-linear-gradient(-45deg, #ccc 0, #ccc 0.5em, white 0, white 0.75em);
+}
+
+
+.markdown-body a,
+a {
+  color: var(--link-color);
+
+  --at-apply: 'hover:underline underline-offset-2';
+}
+
+.markdown-body {
+  background-color: transparent;
+  color: var(--text-color);
 }
 
 

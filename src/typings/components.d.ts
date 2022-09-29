@@ -8,8 +8,12 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppHeader: typeof import('./../components/app-header.vue')['default']
+    Badge: typeof import('./../components/badge.vue')['default']
     EpisodeContent: typeof import('./../components/episode-content.vue')['default']
     EpisodeItem: typeof import('./../components/episode-item.vue')['default']
+    EpisodeMeta: typeof import('./../components/episode-meta.vue')['default']
+    Person: typeof import('./../components/person.vue')['default']
+    PersonList: typeof import('./../components/person-list.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

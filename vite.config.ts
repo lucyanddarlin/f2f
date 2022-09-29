@@ -12,7 +12,7 @@ const pathSrc = path.resolve(__dirname, 'src')
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue({ reactivityTransform: true, include: [/\.vue$/, /\.md$/] }),
+    vue({ include: [/\.vue$/, /\.md$/], reactivityTransform: true }),
     Markdown(),
     Component({
       dts: path.resolve(pathSrc, 'typings/components.d.ts'),

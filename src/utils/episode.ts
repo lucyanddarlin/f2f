@@ -1,9 +1,14 @@
+import type { Component } from 'vue'
+
+export type Person = string | { name: string; link: string }
+
 export interface RawEpisode {
   date: string
-  hosts: string[]
-  guests: string[]
+  hosts: Person[]
+  guests: Person[]
   title: string
   description: string
+  default: Component
 }
 
 export interface Episode extends Omit<RawEpisode, 'date'> {
@@ -26,3 +31,6 @@ export const getAllEpisode = () =>
       date: new Date(module.date),
     }
   })
+
+export const getPersonKey = (person: Person) =>
+  typeof person === 'string' ? person : person.name

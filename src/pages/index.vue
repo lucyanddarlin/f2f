@@ -1,9 +1,9 @@
 <template>
   <div px-4>
-    <div
-      class="flex justify-end items-center px-6 py-2 gap-2 text-2xl cursor-pointer"
-    >
+    <div class="flex justify-end items-center px-6 py-2 gap-2 text-2xl">
       <div
+        cursor-pointer
+        select-none
         :class="
           sortFlag === 'asc'
             ? 'i-carbon-sort-descending'
