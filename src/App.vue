@@ -1,13 +1,18 @@
 <template>
-  <AppHeader />
-  <router-view />
+  <app-header />
+  <router-view v-slot="{ Component }">
+    <Transition>
+      <component :is="Component" />
+    </Transition>
+  </router-view>
+  <app-footer />
 </template>
 
-<script lang="ts">
-import AppHeader from './components/app-header.vue'
-export default {
-  components: { AppHeader },
+<style scoped>
+.v-enter-active {
+  transition: opacity 0.3s ease-in;
 }
-</script>
-
-<style scoped></style>
+.v-enter-from {
+  opacity: 0;
+}
+</style>
