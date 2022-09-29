@@ -1,39 +1,42 @@
 {
-  "name": "f2f-website",
-  "private": true,
+  "name": "opensource-f2f-website",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite-ssg build",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.ts,.vue ."
+    "lint": "eslint --ext .js,.ts,.vue .",
+    "lint:fix": "eslint --ext .js,.ts,.vue . --fix"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "@vueuse/core": "^9.2.0",
+    "@vueuse/head": "^0.7.12",
+    "date-fns": "^2.29.3",
+    "github-markdown-css": "^5.1.0",
+    "vite-ssg": "^0.20.2",
+    "vue": "^3.2.39",
+    "vue-router": "^4.1.5"
   },
   "devDependencies": {
+    "@iconify-json/carbon": "^1.1.8",
     "@sxzz/eslint-config": "^2.4.4",
-    "@types/node": "^18.7.21",
-    "@unocss/reset": "^0.45.23",
+    "@types/node": "^18.7.19",
+    "@unocss/reset": "^0.45.22",
     "@unocss/transformer-directives": "^0.45.22",
     "@vitejs/plugin-vue": "^3.1.0",
     "@vue/runtime-core": "^3.2.39",
-    "@vueuse/core": "^9.3.0",
-    "@vueuse/head": "^0.7.12",
-    "eslint": "8.22.0",
-    "prettier": "^2.7.1",
+    "eslint": "^8.24.0",
     "sass": "^1.55.0",
-    "typescript": "^4.6.4",
+    "typescript": "^4.8.3",
     "unocss": "^0.45.22",
     "unplugin-auto-import": "^0.11.2",
     "unplugin-vue-components": "^0.22.7",
-    "vite": "^3.1.0",
-    "vite-plugin-pages": "^0.26.0",
+    "vite": "^3.1.3",
+    "vite-plugin-vue-markdown": "^0.22.1",
     "vite-plugin-windicss": "^1.8.8",
-    "vite-ssg": "^0.20.2",
-    "vue-router": "^4.1.5",
-    "vue-tsc": "^0.40.4",
+    "vue-tsc": "^0.40.13",
     "windicss": "^3.5.6"
   }
 }

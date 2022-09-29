@@ -1,19 +1,19 @@
 import * as path from 'node:path'
-import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
 import Component from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import WindiCSS from 'vite-plugin-windicss'
+import Markdown from 'vite-plugin-vue-markdown'
+import Unocss from 'unocss/vite'
 
 const pathSrc = path.resolve(__dirname, 'src')
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue({ reactivityTransform: true }),
-    Pages(),
+    vue({ reactivityTransform: true, include: [/\.vue$/, /\.md$/] }),
+    Markdown(),
     Component({
       dts: path.resolve(pathSrc, 'typings/components.d.ts'),
     }),
@@ -23,10 +23,6 @@ export default defineConfig({
       dts: path.resolve(pathSrc, 'typings/components.d.ts'),
     }),
     WindiCSS(),
+    Unocss(),
   ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
-  },
 })

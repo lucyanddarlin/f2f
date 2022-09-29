@@ -2,3 +2,10 @@
   --header-bg: linear-gradient(180deg, #b7dca7 0%, rgba(183, 220, 167, 0) 100%);
 }
 
+.border-box{ 
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    repeating-linear-gradient(-45deg, #ccc 0, #ccc 0.5em, white 0, white 0.75em);
+}
+
+
